@@ -1,6 +1,6 @@
 package clases;
 
-public class Persona{
+public abstract class Persona{
 	protected String nombre;
 	protected String apellido;
 	protected String genero;
@@ -51,6 +51,8 @@ public class Persona{
 	public void setIdentidad(String identidad) {
 		this.identidad = identidad;
 	}
+	
+	public abstract String calcularCumpleanios();
 	
 	public String toString(){
 		return nombre + ", " + apellido + ", " + 

@@ -37,6 +37,6 @@ public class Maestro extends Persona {
 	public String toString(){
 		return super.toString() + ", " +
 				codigoEmpleado + ", " +
-				sueldo;
+				sueldo + "[Desde Maestro] ";
 	}
 }
