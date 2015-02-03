@@ -39,9 +39,4 @@ public class Alumno extends Persona{
 					cuenta + ", " + 
 					carrera + " [Desde Alumno]";
 	}
-
-	@Override
-	public String calcularCumpleanios(){
-		return null;
-	}
 }
