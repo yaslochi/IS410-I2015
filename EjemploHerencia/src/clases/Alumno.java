@@ -2,7 +2,7 @@ package clases;
 
 public class Alumno extends Persona{
 	private String cuenta;
-	private String carrera;
+	private Carrera carrera; //Composición
 	
 	public Alumno(
 			String nombre, 
@@ -11,7 +11,7 @@ public class Alumno extends Persona{
 			int edad,
 			String identidad,
 			String cuenta, 
-			String carrera){
+			Carrera carrera){
 		super(nombre, apellido, genero, edad, identidad);
 		this.cuenta = cuenta;
 		this.carrera = carrera;
@@ -25,11 +25,11 @@ public class Alumno extends Persona{
 		this.cuenta = cuenta;
 	}
 
-	public String getCarrera() {
+	public Carrera getCarrera() {
 		return carrera;
 	}
 
-	public void setCarrera(String carrera) {
+	public void setCarrera(Carrera carrera) {
 		this.carrera = carrera;
 	}
 	
@@ -37,6 +37,6 @@ public class Alumno extends Persona{
 	public String toString(){
 		return super.toString() + ", " + 
 					cuenta + ", " + 
-					carrera + " [Desde Alumno]";
+					carrera.toString() + " [Desde Alumno]";
 	}
 }
